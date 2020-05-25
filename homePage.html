@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+  html {
+    zoom: 92%;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    background-image: linear-gradient(to right, #f8f9ff, rgb(221, 221, 221));
+    /*background-image: linear-gradient(to right, #0400ff, #1febfa);
+ */
+
+  }
+
+  .txtstyle {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+
+
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-size: cover;*/
+  }
+
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('2.1.jpg');
+    min-height: 100%;
+    margin: 4rem;
+  }
+
+  /* First image (Logo. Full height) */
+
+
+
+  .bgcolor {
+    background-image: linear-gradient(to right, #f7941d, #8d5022);
+  }
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("");
+    min-height: 50px;
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("");
+    min-height: 200px;
+  }
+
+  .w3-wide {
+    letter-spacing: 10px;
+  }
+
+  .w3-wide2 {
+    letter-spacing: 5px;
+  }
+
+  .w3-wide3 {
+    letter-spacing: 3px;
+  }
+
+  .w3-hover-opacity {
+    cursor: pointer;
+  }
+
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 500px;
+    }
+  }
+
+  p {
+    direction: rtl;
+  }
+
+  .header-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .box-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .single-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+  }
+
+  .single-box2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+  }
+
+  .single-box3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: auto;
+    border-radius: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+  }
+
+  .single-box-small-pro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: auto;
+    border-radius: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+
+
+  }
+
+  .single-box-small-m {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 305px;
+    height: auto;
+    border-radius: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+
+  }
+
+  .single-box-small-a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 305px;
+    height: auto;
+    border-radius: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+
+  }
+
+
+
+
+
+
+  .single-box:hover {
+    background: #777;
+    color: #fff;
+  }
+
+  .single-box2:hover {
+    background: rgb(58, 163, 76);
+    color: #fff;
+  }
+
+  .single-box-small:hover {
+    background: rgb(58, 163, 76);
+    color: #fff;
+  }
+
+  .single-box3:hover {
+    background: black;
+    color: rgb(58, 163, 76);
+  }
+
+
+  .bgimg-pro {
+    background-image: url(pro.jpg);
+    background-size: cover;
+  }
+
+  .bgimg-a {
+    background-image: url(m.jpg);
+    background-size: cover;
+  }
+
+  .bgimg-m {
+    background-image: url(a.png);
+    background-size: cover;
+  }
+</style>
+
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-center w3-large" style="max-width: 100%; margin-top: 2rem;">
+    <div class="w3-bar txtstyle w3-large" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="txtstyle w3-bar-item w3-button w3-right" style="margin-left: 15px;"><i
+          class="fa fa-arrow-up"></i> בית</a>
+      <a href="#about" class="txtstyle w3-bar-item w3-button w3-hide-small w3-right" style="margin-left: 15px;"><i
+          class="fa fa-user"></i> מי
+        אנחנו</a>
+      <a href="#portfolio" class="txtstyle w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-laptop"></i>
+        למה לבחור בנו</a>
+      <a href="#info" class="txtstyle w3-bar-item w3-button w3-hide-small w3-right" style="margin-right: 15px;"><i
+          class="fa fa-paper-plane"></i>
+        מידע נוסף </a>
+      <a href="#contact" class="txtstyle w3-bar-item w3-button w3-hide-small w3-right" style="margin-right: 15px;"><i
+          class="fa fa-envelope"></i>
+        יצירת קשר</a>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" style="text-align: center" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+          class="fa fa-user"></i> מי אנחנו</a>
+      <a href="#portfolio" style="text-align: center" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+          class="fa fa-laptop"></i> למה לבחור בנו</a>
+      <a href="#info" style="text-align: center" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+          class="fa fa-paper-plane"></i> מידע נוסף</a>
+      <a href="#contact" style="text-align: center" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+          class="fa fa-envelope"></i> יצירת קשר</a>
+    </div>
+  </div>
+
+
+
+  <!-- First Parallax Image with Logo Text -->
+  <br>
+  <br>
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> U get <span
+          class="w3-hide-small"> - החזרי מס </span></span>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!--About Title-->
+  <div id="about">
+    <br>
+    <br>
+    <br>
+    <div class="w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-center w3-wide"> מי אנחנו</span>
+      </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <div class="box-area">
+        <div class="single-box2">
+          <div class="img-area"></div>
+          <div class="img-text">
+            <!--<span class="header-text rtl txtstyle" style="font-size: x-large;"><strong> מי אנחנו </strong></span>-->
+            <p class="rtl txtstyle ">
+              UGET המרכז להחזרי מס לשכירים, פועלת לצורך ביצוע תהליך קבלת החזרי מס לשכירים בכל רחבי הארץ.
+              UGET הינה חברה אשר כל תפקידה הוא לדאוג לכסף שלך.
+              החברה דואגת לכל טיפול התיק מרגע פתיחתו ועד סופו. לאורך התהליך החברה תבצע את איסוף הניירת והגשת הבקשה עבורך
+              לרשויות המס ואף תדאג לסגירת התיק עד השלב האחרון שהוא קבלת הכסף לחשבונך האישי.
+              UGET דואגת לכל התהליך הנוגע לקבלת החזרי המס שלך חזרה ממס הכנסה, החל מאיסוף המסמכים הרלוונטיים, דרך בדיקה
+              מקיפה וממצה של כל נקודות הזיכוי המגיעות לשכירים לצורך קבלת החזר מס הכנסה (ישנם קריטריונים רבים שהעומדים
+              בהם
+              זכאים לקבל החזרי מס מהמדינה), עד לשלב בדיקת המסמכים ע"י יועץ מס מורשה וקבלת הסכום הצפוי להתקבל חזרה ממס
+              הכנסה, חתימה על הגשת דו"חות לקבלת החזר מס והגשת הדו"חות.
+            </p>
+            <p class="rtl txtstyle" style="font-weight: bold;">
+              תן למומחים שלנו לעבוד עבורך.
+              ללא עמלת פתיחת תיק. בדיקת זכאות להחזר מס והגשת הדוחות ללא כל תשלום.<br>
+              לא קיבלת לא שילמת!!!
+            </p>
+
+            <p class="rtl txtstyle ">
+              אז אם את/ה שכיר/ה ומשלם/ת מס הכנסה, כנראה שמגיע לך כסף חזרה - ל-80% מהשכירים במשק המשלמים מס הכנסה מגיע
+              החזרי מס. זה הזמן לבדוק כמה כסף תוכל לקבל חזר ממס הכנסה - גובה החזר המס הממוצע עומד כ-8,000 ש"ח - שלח/י את
+              הפרטים שלך בעמוד צור קשר ואנו ניצור איתך קשר בהקדם.
+
+              יש לדעת:
+              החזרי מס אפשר לבקש עד שש שנים אחורה.
+              שכיר נשוי המגיש בקשה להחזרי מס חייב להגיש גם את כל המסמכים של בן הזוג.
+              מס הכנסה מעביר את הכסף ישירות לחשבונך ומחויב לעשות זאת תוך שלושה חודשים מיום קבלת הדו"ח.<br>
+              לסכום המגיע ממס הכנסה מתווספת ריבית שנתית בשיעור של 4% .
+              לסיכום: אם הנך שכיר ומצאת את עצמך זכאי להחזרי מס לשכירים הינך מוזמן לפנות למשרדינו ואנו מתחייבים לטיפול
+              מקצועי, יעיל ומהיר. לווי צמוד משלב השגת הטפסים ועד לקבלת הפיצוי הכספי המלא.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row">
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+        </div>
+      </div>
+      <p class="w3-large w3-center w3-padding-16 txtstyle"> הדברים שמנחים אותנו:</p>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>מקצועיות</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-user"></i>מחויבות</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-phone"></i>שירותיות</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- ******************************************************************************************************************************************************************************************************************************************************************-->
+  <div id="portfolio">
+    <br>
+    <br>
+    <br>
+
+    <!-- Portfolio Title -->
+    <div class=" w3-display-container w3-opacity-min" style="display: grid;">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge  w3-wide" style="direction: rtl;"> UGET-למה </span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+
+
+    <div class="box-area ">
+      <div class="single-box-small-a bgimg-m">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text txtstyle"><em><strong> אמינות </strong></em></span>
+          <p><br><br> </p>
+        </div>
+      </div>
+
+
+
+      <div class="single-box-small-m bgimg-a">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text txtstyle"><em><strong> מקצועיות </strong></em></span>
+          <p><br><br> </p>
+        </div>
+      </div>
+
+      <div class="single-box-small-pro bgimg-pro">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text txtstyle"><em><strong> ניסיון רב שנים </strong></em></span>
+          <p><br><br> </p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center txtstyle"></h3>
+      <div class="box-area">
+        <div class="single-box2">
+          <div class="img-area"></div>
+          <div class="img-text">
+            <p class="w3-right txtstyle " style="direction: rtl;">
+              מומחיותה של חברת UGET היא בנושא החזרי מס.
+              מקצועיות, ניסיון רב שנים ואמינות אלו דברים שאנו לא מוצאים בהם פשרות.
+              UGET אשר הוקמה במטרה לספק מענה מקצועי למאות אלפי השכירים בישראל המשלמים מיסים כדין אך אינם מודעים
+              לעובדה
+              כי
+              מגיע
+              להם החזר כספי מהמדינה.
+              כמו כן, אנשינו מחוברים למחשבי רשות המיסים, דבר המקנה לנו יתרון ומאפשר לנו לעקוב מקרוב אחר כל שלבי
+              התהליך
+              עד
+              להעברת הכסף מרשויות המס לחשבונו הפרטי של הלקוח.
+              <br>
+              <span class="rtl" style="font-weight: bold;">המחיר הזול בשוק!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  </div>
+
+  <div id="info">
+    <br>
+    <br>
+    <br>
+    <div class="w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-center w3-wide3"> שירותים פיננסיים </span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="box-area">
+      <div class="single-box">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text"><strong> מחזור משכנתאות </strong></span>
+          <p>
+            במהלך התקופה מאז שלקחת את המשכנתא, חלו שינויים רבים הן ברמות הריבית, בכושר ההשתכרות שלך ובתנאים בהם ניתן
+            לקבל את
+            הלוואת המשכנתא וייתכן כי ניתן להוזיל באופן משמעותי את עלויות החזר המשכנתא שלך באמצעות מיחזור המשכנתא.
+            תהליך
+            מיחזור משכנתא הינו תהליך מורכב הדורש ידע מקצועי בתחום המשכנתאות. </p>
+        </div>
+      </div>
+
+      <div class="single-box">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text"><strong> שירותי ביטוח </strong></span>
+          <p>
+            מדינת ישראל מעודדת את אזרחיה לדאוג לעתידם הפנסיוני והביטוחי באמצעות הכרה בביטוחי חיים כסעיף מזכה בהחזרי
+            המס.
+            אחד
+            השירותים אשר מוצעים אצלנו, הוא שירות ייעוץ וניתוח פיננסי וביטוחי אשר יאפשר לך לקבל את המידע המדוייק על
+            מצבך
+            הפיננסי, לאתר כפל ביטוחי, לכסות פערים ביטוחיים ולבצע ניצול מקסימלי של הטבות המס המגיעות לך.
+            עמוד הבית </p>
+        </div>
+      </div>
+    </div>
+    <div class="box-area">
+      <div class="single-box">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text"><strong> זכאות </strong></span>
+          <p>
+            תנאי ראשון לזכאות להחזרי מס הוא כמובן תשלום של מס.
+            רק אזרח שנוכה לו מס מהמשכורת יכול לקבל החזרי מס.
+            כדי לוודא שנוכה לך מס מהמשכורת כל שעליך לעשות הוא לבדוק בתלוש משכורת בחלק של ניכויים אם מופיע תשלום
+            המועבר
+            למס
+            הכנסה. רק במקרה כזה נוכה לך מס מהמשכורת!
+            במידה ונוכה לך מס מהמשכורת קיים סיכוי גדול שמגיע לך החזרי מס. חוקי מס
+            הכנסה המורכבים יוצרים מצבים רבים בהם מנוכה מס גבוה יותר מהמס בו חייבים ורק הגשת דוח למס הכנסה תגרום
+            להחזר
+            המס
+            העודף ששולם.
+            למה להגיש בקשה להחזרי מס דרך גוף מקצועי?
+            פניה באמצעות אנשי מקצוע למס הכנסה מזרזת את תהליך החזרי המס וגורמת לטיפול מקצועי ואומדן מדויק של החזרי
+            המס
+            הצפויים, תוך שימוש בתוכנות המתאימות ובידע הנדרש וחוסכת ללקוח את הזמן ואי הנוחות שבמפגש עם רשויות המס.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- Title-->
+  <div class="w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-center w3-wide2"> הבחירה בידך</span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64">
+    <br>
+    <div class="box-area">
+      <div class="single-box2">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <p class="rtl txtstyle" style="font-weight: bold;">
+            הבחירה לבצע החזרי מס דרך חברה עשויה להגדיל את החזרי המס שלך באלפי שקלים
+          </p>
+          <p class="rtl txtstyle ">
+
+            UGET המרכז להחזרי מס לשכירים, פועלת לצורך ביצוע תהליך קבלת החזרי מס לשכירים בכל רחבי הארץ.
+            UGET הינה חברה אשר כל תפקידה הוא לדאוג לכסף שלך.
+            החברה דואגת לכל טיפול התיק מרגע פתיחתו ועד סופו. לאורך התהליך החברה תבצע את איסוף הניירת והגשת הבקשה
+            עבורך
+            לרשויות המס ואף תדאג לסגירת התיק עד השלב האחרון שהוא קבלת הכסף לחשבונך האישי.
+            UGET דואגת לכל התהליך הנוגע לקבלת החזרי המס שלך חזרה ממס הכנסה, החל מאיסוף המסמכים הרלוונטיים, דרך בדיקה
+            מקיפה וממצה של כל נקודות הזיכוי המגיעות לשכירים לצורך קבלת החזר מס הכנסה (ישנם קריטריונים רבים שהעומדים
+            בהם
+            זכאים לקבל החזרי מס מהמדינה), עד לשלב בדיקת המסמכים ע"י יועץ מס מורשה וקבלת הסכום הצפוי להתקבל חזרה ממס
+            הכנסה, חתימה על הגשת דו"חות לקבלת החזר מס והגשת הדו"חות.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">22 +</span><br>
+      לקוחות שקיבלו מעל 6,500 שקלים
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">155,000 +</span><br>
+      שקלים שהוחזרו
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">50 +</span><br>
+      לקוחות מרוצים
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">100 +</span><br>
+      פגישות שהתקיימו
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-wide">יצירת קשר</span>
+    </div>
+  </div>
+  <div>
+    <!-- /.sml-section-title -->
+    <br>
+    <br>
+
+    <ul class="w3-ul w3-center w3-animate-opacity w3-animate-zoom">
+      <li>טלפון: 03-123456789 </li>
+      <li>מסרון: 052-9990000 (מומלץ כערוץ תקשורת עיקרי ומהיר)</li>
+      <li><a href="mailto:uget@gmail.com">uget@gmail.com</a>  :מייל לשליחת מסמכים </li>
+
+
+      <li>
+        <a class="footer-fb-link" href="https://www.facebook.com/groups/370443003450689/" target="_blank" alt="">
+          <span>UGET - אתר הפייסבוק</span> <img class="img-responsive footer-fb" alt="" src="./assets/img/face.png">
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+
+
+
+  </div>
+
+
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+
+
+  <!-- Container (Contact Section) 
+  <div class="w3-content w3-center w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">WHERE I WORK</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+-->
+  <!--
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+       <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+          mail@mail.com<br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+-->
+
+
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
